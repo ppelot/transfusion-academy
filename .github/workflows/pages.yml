@@ -23,8 +23,10 @@ jobs:
     steps:
       - name: Récupérer le site
         uses: actions/checkout@v6
-      - name: Configurer GitHub Pages
+      - name: Activer et configurer GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Préparer les fichiers
         uses: actions/upload-pages-artifact@v4
         with:
