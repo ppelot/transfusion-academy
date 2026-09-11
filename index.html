@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Plateforme pédagogique consacrée à la sécurité transfusionnelle, aux PSL, aux incidents et à l'hémovigilance.">
+  <meta name="theme-color" content="#071d35">
+  <title>Transfusion Academy</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23071d35'/%3E%3Cpath d='M32 10C24 22 18 29 18 39a14 14 0 0 0 28 0c0-10-6-17-14-29Z' fill='%23ef4444'/%3E%3Cpath d='M27 39h10M32 34v10' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar" aria-label="Navigation principale">
+      <a class="brand" href="#accueil" aria-label="Transfusion Academy — Accueil">
+        <span class="brand-mark" aria-hidden="true">✚</span>
+        <span><strong>Transfusion</strong><small>ACADEMY</small></span>
+      </a>
+      <nav id="main-nav"></nav>
+      <div class="sidebar-card">
+        <span class="eyebrow">MON PARCOURS</span>
+        <strong id="side-progress-label">0 % complété</strong>
+        <div class="progress-track" aria-hidden="true"><i id="side-progress"></i></div>
+        <a href="#parcours">Voir mon tableau de bord →</a>
+      </div>
+      <p class="sidebar-note">Formation pédagogique<br>Version septembre 2026</p>
+    </aside>
+
+    <div class="page-frame">
+      <header class="topbar">
+        <button class="icon-button mobile-menu" id="menu-toggle" aria-controls="sidebar" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
+        <div class="global-search">
+          <span aria-hidden="true">⌕</span>
+          <input id="global-search" type="search" placeholder="Rechercher un symptôme, un incident, un terme…" aria-label="Recherche globale">
+          <kbd>⌘ K</kbd>
+          <div class="search-results" id="search-results" hidden></div>
+        </div>
+        <button class="profile-button" aria-label="Profil apprenant"><span>PP</span><span class="profile-copy"><strong>Mon espace</strong><small>Apprenant</small></span></button>
+      </header>
+      <main id="main" tabindex="-1"></main>
+      <footer>
+        <strong>Transfusion Academy</strong>
+        <p>Les informations présentes sur cette plateforme sont fournies à des fins pédagogiques. La prise en charge d'un patient doit respecter les protocoles de l'établissement, les recommandations professionnelles et la réglementation en vigueur.</p>
+      </footer>
+    </div>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
